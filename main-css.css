@@ -1,0 +1,54 @@
+a{
+    color: #5cb85c;
+}
+
+.empty_space{
+    visibility: hidden;
+}
+.header_color{
+    background-color: white;
+}
+table tr{
+    text-align: center;
+    font-size: 450%;
+}
+
+
+#table_guess tr td:hover{
+    background-color: lightgray;
+}
+
+
+#table_guess{
+    cursor:pointer;
+}
+#table_guess tr td:active{
+    background-color: lightgray;
+}
+#highscore{
+    font-size: 20%;
+    border: solid lightgray 1px;
+}
+#highscore_title{
+    font-size: 150%;
+}
+#btn_table{
+    border-bottom: hidden;
+    border-left: hidden;
+    border-right: hidden;
+}
+#lvl_td{
+    font-size: 100%;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+}
+#lvl_tr td:hover{
+    background-color: white !important;
+}
+.source_code{
+    text-align: center;
+}
+.code_name{
+    cursor: pointer;
+}

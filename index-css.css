@@ -1,0 +1,36 @@
+a {
+    color: #5cb85c;
+}
+
+.empty_space {
+    visibility: hidden;
+}
+
+.header_color {
+    background-color: white;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.registration_title {
+    font-size: 35px;
+}
+
+#ack {
+    font-size: 30px;
+}
+
+.show {
+    display: block !important;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
