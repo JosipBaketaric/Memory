@@ -7,6 +7,15 @@
  */
 include 'connect.php';
 
+function checkEmailForm($email){
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $response["error"] = true;
+        $response["error_msg"] = "Email form invalid";
+        echo json_encode($response);
+        die;
+    }
+}
+
 function checkIfEmailExists($con, $email){
     $query = "SELECT * FROM users WHERE email = '".$email."'";
     if(!$result = mysqli_query($con,$query)){
@@ -74,6 +83,7 @@ $username = $_POST["username"];
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
 
+checkEmailForm($email);
 checkIfEmailExists($con, $email);
 checkIfUsernameExists($con, $username);
 registerUser($con, $email, $username, $password, $firstname, $lastname);

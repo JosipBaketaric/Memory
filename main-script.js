@@ -170,6 +170,8 @@ function logOut() {
         success: function (html) {
             if (!html["error"]) {
 
+            }else{
+                window.location.replace("index.php");
             }
         }
     });//End of async fetch
